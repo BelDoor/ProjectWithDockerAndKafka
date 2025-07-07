@@ -25,6 +25,8 @@ public class ConfigOrder {
         this.kafkaProperties = kafkaProperties;
     }
 
+
+
     @Bean
     public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> properties = kafkaProperties.buildProducerProperties();

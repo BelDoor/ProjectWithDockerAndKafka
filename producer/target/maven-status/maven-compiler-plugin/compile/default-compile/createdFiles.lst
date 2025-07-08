@@ -1,0 +1,5 @@
+producer\service\producer\Producer.class
+producer\config_order\ConfigOrder.class
+producer\service\OrderService.class
+producer\domain\Order\dto\OrderDTO.class
+producer\ProducerApplication.class

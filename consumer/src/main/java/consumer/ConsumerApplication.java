@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConsumerApplication {
+public class ConsumerApplication  {
 
     private static final Logger logger = LoggerFactory.getLogger(ConsumerApplication.class);
 
@@ -14,5 +14,5 @@ public class ConsumerApplication {
         SpringApplication.run(ConsumerApplication.class, args);
         logger.info("Running...");
     }
-
 }
+

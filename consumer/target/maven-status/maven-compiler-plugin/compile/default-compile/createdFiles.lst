@@ -1,0 +1,7 @@
+consumer\domain\dto\OrderDto.class
+consumer\configuration\ConfigOrder.class
+consumer\service\consumer\OrderService.class
+consumer\ConsumerApplication.class
+consumer\service\consumer\Consumer.class
+consumer\domain\entity\Order.class
+consumer\repository\OrderRepository.class

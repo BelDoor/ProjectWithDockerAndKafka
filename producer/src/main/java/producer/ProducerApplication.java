@@ -12,7 +12,7 @@ import producer.service.OrderService;
 @SpringBootApplication
 public class ProducerApplication implements CommandLineRunner {
 
-    private static final Logger logger =  LoggerFactory.getLogger(ProducerApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProducerApplication.class);
 
     private final OrderService orderService;
 
@@ -21,17 +21,13 @@ public class ProducerApplication implements CommandLineRunner {
         this.orderService = orderService;
     }
 
-
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(ProducerApplication.class, args);
 
         logger.info("Running...");
     }
 
-
     public void run(String... args) throws Exception {
         orderService.createOrder();
     }
-
-
 }

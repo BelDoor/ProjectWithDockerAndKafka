@@ -13,5 +13,4 @@ public class ConfigOrder {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
-
 }

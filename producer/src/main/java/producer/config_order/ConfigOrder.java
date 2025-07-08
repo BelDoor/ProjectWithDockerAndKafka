@@ -9,8 +9,6 @@ import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-import producer.service.OrderService;
-import producer.service.producer.Producer;
 
 import java.util.Map;
 
@@ -24,8 +22,6 @@ public class ConfigOrder {
     public ConfigOrder(KafkaProperties kafkaProperties) {
         this.kafkaProperties = kafkaProperties;
     }
-
-
 
     @Bean
     public ProducerFactory<String, String> producerFactory() {
@@ -46,6 +42,4 @@ public class ConfigOrder {
                 .replicas(1)
                 .build();
     }
-
-
 }

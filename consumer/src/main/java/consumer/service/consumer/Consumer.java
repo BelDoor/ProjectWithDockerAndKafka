@@ -30,7 +30,6 @@ public class Consumer {
 
     @KafkaListener(topics = orderTopic)
     public void consumeMessage(String message) throws JsonProcessingException {
-//        log.info("message consumed {}", message);
 
         OrderDto orderDto = objectMapper.readValue(message, OrderDto.class);
         Order order = modelMapper.map(orderDto, Order.class);

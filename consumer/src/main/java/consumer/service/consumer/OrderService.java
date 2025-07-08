@@ -1,6 +1,5 @@
 package consumer.service.consumer;
 
-
 import consumer.domain.entity.Order;
 import consumer.repository.OrderRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -18,8 +17,7 @@ public class OrderService {
         this.orderRepository = orderRepository;
     }
 
-    public void persistOrder(Order foodOrder) {
-        Order persistedFoodOrder = orderRepository.save(foodOrder);
-//        log.info("food order persisted {}", persistedFoodOrder);
+    public void persistOrder(Order order) {
+        Order persistedOrder = orderRepository.save(order);
     }
 }
